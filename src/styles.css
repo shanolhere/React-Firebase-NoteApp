@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+button:active {
+  transform: scaleX(0.77);
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 15px;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+ul {
+  list-style-type: none;
+}
+nav a,
+button a {
+  text-decoration: none;
+  color: white;
+}
+nav a.active {
+  color: dodgerblue;
+}
+.container {
+  margin: 2.9rem;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+}
+img {
+  height: 490px;
+}
+.image {
+  width: 60%;
+}
+.homeTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  padding: 20px;
+  gap: 5px;
+}
+.noteIt {
+  color: black;
+}
+.title1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 5px 30px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+.title2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 30px;
+  color: dodgerblue;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+  text-align: left;
+}
+.btn {
+  text-align: left;
+  padding: 5px 30px;
+}
+button {
+  outline: none;
+  border: none;
+  letter-spacing: 2px;
+}
+.getStarted {
+  background: dodgerblue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.getStarted:hover {
+  border: 2px solid dodgerblue;
+  background: white;
+}
+.getStarted:hover a {
+  color: dodgerblue;
+}
+.signup-container {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 30px;
+  background: whitesmoke;
+  width: max-content;
+}
+.addNotesContainer {
+  margin: 0.8rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  background: whitesmoke;
+  width: max-content;
+}
+.input {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 10px;
+}
+label {
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+input,
+textarea,
+select {
+  font-size: 16px;
+  padding: 5px;
+  outline: none;
+  border: 2px solid black;
+  width: 100%;
+  border-radius: 5px;
+}
+.submitBtn {
+  margin: 20px auto;
+  outline: none;
+  border: none;
+  background: dodgerblue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+.submitBtn:hover {
+  border: 2px solid dodgerblue;
+  background: white;
+  color: dodgerblue;
+}
+a {
+  text-decoration: none;
+  color: dodgerblue;
+}
+.error {
+  color: red;
+}
+.logOutBtn {
+  outline: none;
+  border: none;
+  background: dodgerblue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+.logOutBtn:hover {
+  border: 2px solid dodgerblue;
+  background: white;
+  color: dodgerblue;
+}
+/* homeCOntainer styling */
+.homeContainer {
+  margin: 0rem auto;
+  /* padding: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.sidebar {
+  background: #ebebeb;
+  width: 15%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding-top: 30px;
+  /* font-size: 1.5rem; */
+}
+.notesContainer {
+  padding-top: 30px;
+  /* background: red; */
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.menuActive {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  width: 95%;
+  letter-spacing: 1px;
+}
+/* notes page styling */
+.allNotes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.noteContainer {
+  background: #ebebeb;
+  padding: 0px 0px;
+  border-radius: 5px;
+  height: max-content;
+  width: 290px;
+  /* height: 320px; */
+  text-align: left;
+}
+.dates,
+.title {
+  /* position: absolute; */
+  background: black;
+  color: dodgerblue;
+
+  width: 100%;
+  padding: 10px;
+}
+.title {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.dates {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.desc {
+  /* position: absolute; */
+  padding: 15px;
+  background-color: #ebebeb;
+  overflow-x: hide;
+  width: 270px;
+  height: 320px;
+  overflow-y: scroll;
+  text-align: justify;
+}
+hr {
+  border: 1px solid rgb(223, 221, 221);
+  background: rgb(223, 221, 221);
+  width: 100%;
+}
+.descContainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.OtherDetails {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icons {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.additionalInfo {
+  display: flex;
+  gap: 10px;
+  margin: 5px auto;
+}
+span {
+  background: dodgerblue;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.high {
+  background: rgb(233, 37, 37);
+}
+.medium {
+  background: seagreen;
+}
+.low {
+  background: rgb(226, 89, 38);
+}
+button:hover {
+  cursor: pointer;
+}
+.deleteBtn {
+  color: red;
+  padding: 2px;
+}
+.editBtn {
+  color: green;
+  padding: 2px;
+}
+.archiveBtn {
+  color: orangered;
+  padding: 2px;
+}
+.deleteBtn:hover {
+  background: red;
+  color: white;
+}
+.editBtn:hover {
+  background: green;
+  color: white;
+}
+.archiveBtn:hover {
+  background: orangered;
+  color: white;
+}
+/* span count styling */
+.menu {
+  font-size: 1.2rem;
+  /* background: red;
+  width: 90px; */
+}
+.badge {
+  background: rgb(163, 162, 162);
+  color: black;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  padding-left: 6px;
+  display: flex;
+  padding-top: 2px;
+  justify-content: center;
+  text-align: center;
+}
+/* Menu Item styling */
+.menuItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+/* profileSection styling */
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  /* background: red; */
+}
+.profile {
+  height: 180px;
+}
+table {
+  margin: 1rem auto;
+  /* border: 2px solid red; */
+}
+th {
+  width: 190px;
+  padding: 5px;
+  /* background: chartreuse; */
+  text-align: left;
+}
+td {
+  width: 90px;
+  padding: 5px;
+  /* background: chartreuse; */
+  text-align: left;
+}
+
+/* footer  styling */
+
+footer {
+  /* background: chartreuse; */
+  margin: 0.2rem auto;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
